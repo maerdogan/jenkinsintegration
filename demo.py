@@ -1,5 +1,5 @@
-import os
-os.path.abspath(os.getcwd())
+from pathlib import Path
+print("File      Path:", Path(__file__).absolute())
 
 print("Hello World..")
 print("Hello World-2..")
