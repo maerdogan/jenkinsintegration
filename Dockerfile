@@ -7,5 +7,4 @@ RUN echo "ubuntu ALL=(ALL) NOPASSWD: ALL" >>  /etc/sudoers
 # Set as default user
 USER ubuntu
 
-
-CMD run
+CMD echo "hello"
