@@ -1,17 +1,11 @@
 FROM ubuntu:latest
 
-ENV APP_ROOT=/opt/app-root
-ENV PATH=/usr/local/bin:${PATH} HOME=${APP_ROOT}
+RUN apt-get update && apt-get -y install sudo
+RUN useradd -ms /bin/bash ubuntu && usermod -aG sudo ubuntu
+RUN echo "ubuntu ALL=(ALL) NOPASSWD: ALL" >>  /etc/sudoers
 
-RUN mkdir ${APP_ROOT} && \
-    chmod -R u+x /usr/local/bin && \
-    chgrp -R 0 ${APP_ROOT} && \
-    chmod -R g=u ${APP_ROOT} /etc/passwd
-    
-USER 10001
-WORKDIR ${APP_ROOT}
+# Set as default user
+USER ubuntu
 
-### user name recognition at runtime w/ an arbitrary uid - for OpenShift deployments
-ENTRYPOINT [ "uid_entrypoint" ]
-# VOLUME ${APP_ROOT}/logs ${APP_ROOT}/data
+
 CMD run
