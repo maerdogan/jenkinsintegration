@@ -8,3 +8,4 @@ RUN echo "ubuntu ALL=(ALL) NOPASSWD: ALL" >>  /etc/sudoers
 USER ubuntu
 
 CMD echo "hello"
+CMD tail -f /dev/null
