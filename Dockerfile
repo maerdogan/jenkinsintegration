@@ -6,7 +6,7 @@ RUN useradd -ms /bin/bash ubuntu && usermod -aG sudo ubuntu
 
 
 RUN apt install cron
-RUN apt-get install -y libaio1 && apt-get install -y build-essential unzip python-dev libaio-dev && python3 -m pip install cx_Oracle && 
+RUN apt-get install -y libaio1 && apt-get install -y build-essential unzip python-dev libaio-dev 
 RUN apt-get install -y mlocate
 RUN apt-get install -y gzip && apt-get install -y zip
 RUN apt-get install -y openjdk-8-jdk
