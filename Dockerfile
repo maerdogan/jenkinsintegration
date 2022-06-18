@@ -5,7 +5,6 @@ RUN apt-get -y install sudo
 RUN useradd -ms /bin/bash ubuntu && usermod -aG sudo ubuntu
 
 
-RUN apt-get install -y python && apt-get install -y python3-pip
 RUN apt install cron
 RUN apt-get install -y libaio1 && apt-get install -y build-essential unzip python-dev libaio-dev && python3 -m pip install cx_Oracle && 
 RUN apt-get install -y mlocate
