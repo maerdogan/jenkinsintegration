@@ -3,7 +3,7 @@ FROM ubuntu:latest
 CMD apt-get -y install sudo
 RUN useradd -ms /bin/bash ubuntu && usermod -aG sudo ubuntu
 
-RUN apt-get install -y python3
+RUN apt-get install -y python
 RUN apt-get install -y python3-pip
 RUN apt install cron
 RUN python3 -m pip install cx_Oracle 
