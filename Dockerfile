@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 RUN echo "ubuntu ALL=(ALL) NOPASSWD: ALL" >>  /etc/sudoers
-RUN useradd -ms /bin/bash 1028880000 && usermod -aG sudo 1028880000
+
 
 # Set as default user
 USER ubuntu
