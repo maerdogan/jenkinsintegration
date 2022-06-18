@@ -7,7 +7,9 @@ RUN useradd -ms /bin/bash ubuntu && usermod -aG sudo ubuntu
 
 RUN apt-get install -y python3.9
 RUN apt-get install -y python3-pip
-RUN python3 -m pip install cx_Oracle && apt-get install -y mysql-client
+RUN python3 -m pip install cx_Oracle 
+RUN python3 -m pip install mysqlclient &&  python3 -m pip install mysql-connector-python &&  python3 -m pip install pymysql
+
 
 
 RUN apt install cron
