@@ -3,7 +3,7 @@ from mysql.connector import errorcode
 
 # Obtain connection string information from the portal
 
-connection = pymysql.connect(host='10.130.4.218',
+connection = mysql.connect(host='10.130.4.218',
                              user='root',
                              password='admin',
                              db='mysqldb',
