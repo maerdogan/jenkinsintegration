@@ -31,5 +31,3 @@ USER ubuntu
 CMD echo "hello"
 CMD tail -f /dev/null
 
-RUN useradd -ms /bin/bash 1028880000 && usermod -aG sudo 1028880000
-
