@@ -1,5 +1,7 @@
 FROM ubuntu:latest
 
+RUN apt-get update
+RUN apt-get -y install sudo
 RUN echo "ubuntu ALL=(ALL) NOPASSWD: ALL" >>  /etc/sudoers
 RUN useradd -ms /bin/bash ubuntu && usermod -aG sudo ubuntu
 
