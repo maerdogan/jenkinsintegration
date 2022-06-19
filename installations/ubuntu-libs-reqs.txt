@@ -12,3 +12,5 @@ openjdk-8-jdk
 net-tools
 telnet
 wget
+vim
+firefox
