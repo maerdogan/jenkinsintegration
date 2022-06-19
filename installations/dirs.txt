@@ -1,0 +1,9 @@
+/u01/app
+/u01/backups
+/u01/commands
+/u01/installedApps
+/u01/jdk
+/u01/root-cmds
+/u01/scripts
+/u01/setups
+/u01/sqls
