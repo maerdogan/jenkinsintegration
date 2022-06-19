@@ -7,10 +7,12 @@ RUN echo "ubuntu ALL=(ALL) NOPASSWD: ALL" >>  /etc/sudoers
 
 COPY cmds-sqls/* /u01/sqls 
 COPY installations/* /u01/setups
+
+RUN apt-get update
+
 RUN xargs -a /u01/setups/ubuntu-libs-reqs.txt apt-get install -y 
 RUN rm -rf /var/lib/apt/lists/*
  
-RUN apt-get update
 RUN python3 -m pip install \
   cx_Oracle \
   mysql-client \
