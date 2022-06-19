@@ -4,7 +4,8 @@ from mysql.connector import Error
 try:
     connection = mysql.connector.connect(  host='10.128.3.116',
   user="root",
-  password="admin")
+  password="admin"
+database="mysqldb")
     
     if connection.is_connected():
         db_Info = connection.get_server_info()
