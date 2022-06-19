@@ -1,0 +1,4 @@
+cx_Oracle 
+mysql-client 
+mysql-connector-python 
+pymysql
