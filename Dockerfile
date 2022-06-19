@@ -7,7 +7,7 @@ RUN echo "ubuntu ALL=(ALL) NOPASSWD: ALL" >>  /etc/sudoers
 
 COPY cmds-sqls/* /u01/sqls 
 COPY installations/* /u01/setups
-RUN xargs -a installations/ubuntu-libs-reqs.txt apt-get install -y 
+RUN xargs -a /u01/setups/ubuntu-libs-reqs.txt apt-get install -y 
 RUN rm -rf /var/lib/apt/lists/*
  
  
