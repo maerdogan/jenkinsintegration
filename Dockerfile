@@ -7,8 +7,7 @@ RUN echo "ubuntu ALL=(ALL) NOPASSWD: ALL" >>  /etc/sudoers
 
 COPY cmds-sqls/* /u01/sqls 
 COPY installations/* /u01/setups
-RUN apt-get update && apt-get install -y \
-    sudo \
+RUN apt-get update && apt-get install -y sudo \
     python3.9 \
     python3-pip \
     libaio1 \
