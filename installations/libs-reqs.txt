@@ -1,0 +1,15 @@
+sudo
+python3.9
+python3-pip
+libaio1
+build-essential
+unzip
+libaio-dev 
+cron
+mlocate
+gzip
+zip
+openjdk-8-jdk
+net-tools
+telnet
+wget
