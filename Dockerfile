@@ -10,7 +10,7 @@ COPY installations/* /u01/setups
 RUN xargs -a /u01/setups/ubuntu-libs-reqs.txt apt-get install -y 
 RUN rm -rf /var/lib/apt/lists/*
  
- 
+RUN apt-get update
 RUN python3 -m pip install \
   cx_Oracle \
   mysql-client \
