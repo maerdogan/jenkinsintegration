@@ -26,7 +26,7 @@ CMD export ORACLE_HOME=/u01/installedApps/instantclient_19_8
 CMD export export LD_LIBRARY_PATH=/u01/installedApps/instantclient_19_8:$LD_LIBRARY_PATH 
 
 RUN export ORACLE_HOME=/u01/installedApps/instantclient_19_8
-RUN export export LD_LIBRARY_PATH=/u01/installedApps/instantclient_19_8:$LD_LIBRARY_PATH 
+RUN export LD_LIBRARY_PATH=/u01/installedApps/instantclient_19_8:$LD_LIBRARY_PATH 
 
 CMD tail -f /dev/null
 
