@@ -13,4 +13,5 @@ net-tools
 telnet
 wget
 vim
+curl
 firefox
