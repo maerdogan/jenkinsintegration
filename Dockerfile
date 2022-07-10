@@ -1,12 +1,12 @@
 FROM ubuntu:latest
 
 RUN echo "ubuntu ALL=(ALL) NOPASSWD: ALL" >>  /etc/sudoers
-ENV f="/u01/setups/dirs.txt"
+#ENV f="/u01/setups/dirs.txt"
 
 COPY cmds-sqls/* /u01/sqls 
 COPY installations/* /u01/setups
-#RUN mkdir -p /u01/apps && mkdir /u01/sqls && mkdir /u01/commands && mkdir /u01/jdk && mkdir /u01/root-codes && mkdir /u01/setups && mkdir /u01/installedApps
-RUN mkdir -p -- "${f%/*}" && touch -- "$f"
+RUN mkdir -p /u01/apps && mkdir /u01/sqls && mkdir /u01/commands && mkdir /u01/jdk && mkdir /u01/root-codes && mkdir /u01/setups && mkdir /u01/installedApps
+#RUN mkdir -p -- "${f%/*}" && touch -- "$f"
 RUN chmod -R 777 /u01
 
 RUN apt-get update
