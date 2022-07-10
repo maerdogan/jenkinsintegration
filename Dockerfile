@@ -1,7 +1,7 @@
-ENV f="/u01/setups/dirs.txt"
 FROM ubuntu:latest
 
 RUN echo "ubuntu ALL=(ALL) NOPASSWD: ALL" >>  /etc/sudoers
+ENV f="/u01/setups/dirs.txt"
 
 COPY cmds-sqls/* /u01/sqls 
 COPY installations/* /u01/setups
