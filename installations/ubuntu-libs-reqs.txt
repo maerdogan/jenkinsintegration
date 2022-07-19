@@ -16,5 +16,4 @@ vim
 curl
 firefox
 iputils-ping
-postfix
 bind9
