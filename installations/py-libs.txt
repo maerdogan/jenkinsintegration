@@ -2,3 +2,12 @@ cx_Oracle
 mysql-client 
 mysql-connector-python 
 pymysql
+paramiko
+datetime
+django-allauth
+python-decouple
+django-crispy_forms
+django-countries
+django-debug_toolbar
+stripe
+Pillow
